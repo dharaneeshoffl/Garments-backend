@@ -21,7 +21,7 @@ app.use(cors());
 
 //! Database Connection with MongoDb
 mongoose.connect(
-  "mongodb+srv://dharaneeshoffl:01010101@cluster0.1vqmh6m.mongodb.net/garments?retryWrites=true&w=majority&appName=Cluster0"
+  "mongodb+srv://dharaneeshoffl:01010101@cluster0.1vqmh6m.mongodb.net/garments"
 );
 
 
