@@ -10,7 +10,7 @@ const cors = require('cors');
 const { error } = require('console');
 const { type } = require('os');
 
-
+app.use("/images",express.static('photos'));
 app.use(express.json());
 app.use(cors());
 
