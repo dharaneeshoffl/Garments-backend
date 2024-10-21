@@ -29,7 +29,8 @@ mongoose.connect(
 
 
 app.get("/", (req,res) => {
-    res.send("express app is running")
+    res.status(200).json("express app is running")
+
 })
 
 
