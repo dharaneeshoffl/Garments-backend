@@ -10,7 +10,7 @@ const cors = require('cors');
 const { error } = require('console');
 const { type } = require('os');
 
-app.use("/images",express.static('photos'));
+// app.use("/images",express.static('photos'));
 app.use(express.json());
 app.use(cors());
 
@@ -313,7 +313,7 @@ app.post('/getcart', fetchUser, async (req, res) => {
 })
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log("server is running on port " + port);
    
 })
